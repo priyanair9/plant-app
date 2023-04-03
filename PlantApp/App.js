@@ -1,17 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
 import AppButton from './components/AppButton'
+import MyPlantsScreen from './screens/MyPlantsScreen';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style = {styles.title}>My Plants</Text>
-      <TouchableOpacity style={styles.plant}>
-        <Text style = {styles.plantTitle}>Plant Name</Text>
-      </TouchableOpacity>
-      <AppButton title={"Name"} backgroundColor = {'#5E6B5E'} textColor = {'white'}/>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <MyPlantsScreen/>
   );
 }
 
