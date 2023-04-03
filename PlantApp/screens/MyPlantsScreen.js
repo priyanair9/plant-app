@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
 import AppButton from '../components/AppButton';
+import SmallButton from '../components/SmallButton'
 
 function MyPlantsScreen(props) {
     return (
@@ -10,6 +11,7 @@ function MyPlantsScreen(props) {
         <Text style = {styles.plantTitle}>Plant Name</Text>
       </TouchableOpacity>
       <AppButton title={"Name"} backgroundColor = {'#5E6B5E'} textColor = {'white'}/>
+      <SmallButton style = {styles.plus} title = "+" backgroundColor={'#A9B9AA'} size = {50}/>
     </SafeAreaView>
     );
 }
@@ -36,6 +38,9 @@ const styles = StyleSheet.create({
         color: 'black',
         fontWeight: 'bold',
       },
+      plus: {
+
+      }
 })
 
 export default MyPlantsScreen;
