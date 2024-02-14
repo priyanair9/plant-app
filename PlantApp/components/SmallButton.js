@@ -10,13 +10,14 @@ function SmallButton({style = {style}, title, backgroundColor, size, onPress}) {
                 height: size,
                 justifyContent: 'center',
                 alignItems: 'center',
-                borderRadius: 50,
-                flexDirection: 'row',
-                alignItems: 'center',
+                borderRadius: size/2,
+                paddingBottom: 5
             }}> 
                  <Text style = {{
                     color: "white",
                     fontSize: size-10,
+                    textAlign: 'center',
+                    textAlignVertical: 'center',
                 }}
                 >{title}</Text>
             </View>
