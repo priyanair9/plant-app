@@ -10,7 +10,7 @@ function MyPlantsScreen(props) {
       <TouchableOpacity style={styles.plant}>
         <Text style = {styles.plantTitle}>Plant Name</Text>
       </TouchableOpacity>
-      <AppButton title={"Name"} backgroundColor = {'#5E6B5E'} textColor = {'white'}/>
+      <AppButton title={"Name"} backgroundColor = {'#8C9A78'} textColor = {'white'}/>
       <SmallButton style = {styles.plus} title = "+" backgroundColor={'#A9B9AA'} size = {50}/>
     </SafeAreaView>
     );
